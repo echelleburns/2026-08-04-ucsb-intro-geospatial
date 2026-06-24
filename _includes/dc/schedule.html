@@ -1,0 +1,362 @@
+{% comment %}
+This is the typical schedule for the Data Carpentry workshops.
+The schedule for the different curricula are listed here:
+- dc-astronomy
+- dc-ecology
+- dc-genomics
+- dc-image
+- dc-socsci
+- dc-geosptial
+{% endcomment %}
+
+{% if site.curriculum == "dc-astronomy" %}
+<div class="row">
+  <div class="col-md-6">
+    <h3>Day 1</h3>
+    <table class="table table-striped">
+      <tr>
+	<td>Before starting</td>
+	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
+      </tr>
+      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/astronomy-python/01-query.html/">Basic Queries</a></td></tr>
+      <tr><td> </td><td><a href="https://datacarpentry.org/astronomy-python/02-coords.html">Coordinate Transformations</a></td></tr>
+      <tr><td>Afternoon</td> <td> <a href="https://datacarpentry.org/astronomy-python/03-transform.html">Plotting and Tabular Data</a></td></tr>
+      <tr><td> </td> <td> <a href="https://datacarpentry.org/astronomy-python/04-motion.html">Plotting and Pandas</a></td></tr>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <h3>Day 2</h3>
+    <table class="table table-striped">
+      <tr><td>Morning</td><td><a href="https://datacarpentry.org/astronomy-python/05-select.html">Transform and Select</a></td></tr>
+      <tr><td> </td> <td> <a href="https://datacarpentry.org/astronomy-python/06-join.html">Join</a></td></tr>
+      <tr><td>Afternoon</td><td><a href="https://datacarpentry.org/astronomy-python/07-photo.html">Photometry</a></td></tr>
+      <tr><td> </td><td><a href="https://datacarpentry.org/astronomy-python/08-plot.html">Visualization</a></td></tr>
+    </table>
+  </div>
+</div>
+
+{% elsif site.curriculum == "dc-image" %}
+<div class="row">
+  <div class="col-md-6">
+    <h3>Day 1</h3>
+    <table class="table table-striped">
+      <tr>
+	<td>Before starting</td>
+	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
+      </tr>
+      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/image-processing/01-introduction.html">Introduction</a></td></tr>
+      <tr><td> </td><td><a href="https://datacarpentry.org/image-processing/02-image-basics.html">Image Basics</a></td></tr>
+      <tr><td> </td><td><a href="https://datacarpentry.org/image-processing/03-skimage-images.html">Working with skimage</a></td></tr>
+      <tr><td>Afternoon</td> <td> <a href="https://datacarpentry.org/image-processing/04-drawing.html">Drawing and Bitwise Operations</a></td></tr>
+      <tr><td> </td> <td> <a href="https://datacarpentry.org/image-processing/05-creating-histograms.html">Creating Histograms</a></td></tr>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <h3>Day 2</h3>
+    <table class="table table-striped">
+      <tr><td>Morning</td><td><a href="https://datacarpentry.org/image-processing/06-blurring.html">Blurring Images</a></td></tr>
+      <tr><td> </td> <td> <a href="https://datacarpentry.org/image-processing/07-thresholding.html">Thresholding</a></td></tr>
+      <tr><td>Afternoon</td><td><a href="https://datacarpentry.org/image-processing/08-connected-components.html">Connected Component Analysis</a></td></tr>
+      <tr><td> </td><td><a href="https://datacarpentry.org/image-processing/09-challenges.html">Capstone Challenge</a></td></tr>
+    </table>
+  </div>
+</div>
+
+{% elsif site.curriculum == "dc-ecology" %}
+<div class="row">
+  <div class="col-md-6">
+    <h3>Day 1</h3>
+    <table class="table table-striped">
+      <tr>
+	<td>Before starting</td>
+	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
+      </tr>
+      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets</a></td></tr>
+      <tr><td> </td><td><a href="https://datacarpentry.org/OpenRefine-ecology-lesson/">OpenRefine for Data Cleaning</a></td></tr>
+      <tr>
+        <td>Afternoon</td>
+        <td>
+          {% if site.flavor == "r" %}
+          <a href="https://datacarpentry.org/R-ecology-lesson/">Introduction to R</a>
+          {% elsif site.flavor == "python" %}
+          <a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python</a>
+          {% else %}
+          {% include warning-flavor.html %}
+          {% endif %}
+      </td></tr>
+      <tr> <td>Evening</td> <td>END</td> </tr>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <h3>Day 2</h3>
+    <table class="table table-striped">
+      <tr> <td>Morning</td>
+        <td>
+          {% if site.flavor == "r" %}
+          <a href="https://datacarpentry.org/R-ecology-lesson/">Continuation of R: Data analysis and Visualization</a>
+          {% elsif site.flavor == "python" %}
+          <a href="https://datacarpentry.org/python-ecology-lesson/">Continuation of Python: Data analysis and Visualization</a>
+          {% else %}
+          {% include warning-flavor.html %}
+          {% endif %}
+        </td>
+      </tr>
+      <tr> <td>Afternoon</td><td><a href="https://datacarpentry.org/sql-ecology-lesson/">Data Management with SQL</a></td></tr>
+      <tr>
+	<td>Evening</td>
+	<td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
+      </tr>
+      <tr>
+	<td> </td>
+	<td> END </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+{% elsif site.curriculum == "dc-genomics" %}
+
+<div class="row">
+  <div class="col-md-6">
+    <h3>Day 1</h3>
+    <table class="table table-striped">
+      <tr>
+	<td>Before starting</td>
+	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
+      </tr>
+      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/organization-genomics/">Project Organization and Management</a></td></tr>
+      <tr><td> </td><td><a href="https://datacarpentry.org/shell-genomics/">Introduction to the Command Line</a></td></tr>
+      <tr><td>Afternoon</td><td><a href="https://datacarpentry.org/wrangling-genomics/">Data Wrangling and Processing</a></td></tr>
+			<tr> <td>Evening</td> <td>END</td> </tr>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <h3>Day 2</h3>
+    <table class="table table-striped">
+			<tr><td>Morning</td><td><a href="https://datacarpentry.org/wrangling-genomics/">Continuation: Data Wrangling and Processing</a></td></tr>
+			<tr><td>Afternoon</td><td><a href="https://datacarpentry.org/cloud-genomics/">Introduction to Cloud Computing for Genomics</a></td></tr>
+      <tr>
+	<td>Evening</td>
+	<td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
+      </tr>
+      <tr>
+	<td> </td>
+	<td> END </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+{% elsif site.curriculum == "dc-socsci" %}
+
+<div class="row">
+  <div class="col-md-6">
+    <h3>Day 1</h3>
+    <table class="table table-striped">
+      <tr>
+	<td>Before starting</td>
+	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
+      </tr>
+      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/spreadsheets-socialsci/">Data Organization in Spreadsheets</a></td></tr>
+      <tr><td> </td><td><a href="https://datacarpentry.org/openrefine-socialsci/">OpenRefine for Data Cleaning</a></td></tr>
+      <tr><td>Afternoon</td><td><a href="https://datacarpentry.org/r-socialsci/">Introduction to R</a></td></tr>
+      <tr> <td>Evening</td> <td>END</td> </tr>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <h3>Day 2</h3>
+    <table class="table table-striped">
+      <tr> <td>Morning</td> <td><a href="https://datacarpentry.org/r-socialsci/">Continuation of R: Data Analysis & Visualization</a></td></tr>
+      <tr> <td>Afternoon</td><td><a href="https://datacarpentry.org/sql-socialsci/">Data Management with SQL</a></td></tr>
+      <tr>
+	<td>Evening</td>
+	<td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
+      </tr>
+      <tr>
+	<td> </td>
+	<td> END </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+{% elsif site.curriculum == "dc-geospatial" %}
+
+<div class="row">
+  <div class="col-md-6">
+    <h3>Course Content (3-5p PT)</h3>
+    <table class="table table-striped">
+      <tr>
+	<td>Before the workshop</td>
+        <td> </td>	
+	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
+      </tr>
+      <tr>
+        <td>Week 1</td>
+	<td>July 1</td>    
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/01-rstudio-intro.html">Introduction to R and RStudio</a></td>
+      </tr>
+      <tr>
+        <td> </td>
+	<td></td>	
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/02-project-intro.html">Project Management with Rstudio</a></td>
+      </tr>
+      <tr>
+        <td> </td>
+	<td></td>	
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/03-data-structures-part1.html">Data Structures</a></td>
+      </tr>
+      <tr>
+        <td>Week 2</td>
+	<td>July 8</td>    
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/04-data-structures-part2.html">Exploring Data Frames</a></td>
+      </tr>
+      <tr>
+        <td> </td>
+	<td></td>	
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/05-data-subsetting.html">Subsetting Data</a></td>
+      </tr>
+      <tr>
+        <td> </td>
+	<td></td>	
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/06-dplyr.html">Data frame Manipulation with dplyr</a></td>
+      </tr>
+      <tr>
+        <td>Week 3</td>
+	<td>July 15</td>    
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/07-plot-ggplot2.html">Introduction to Visualization</a></td>
+      </tr>
+      <tr>
+        <td> </td>
+	<td></td>	
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/08-writing-data.html">Writing Data</a></td>
+      </tr>
+      <tr>
+        <td> </td>
+	<td></td>	
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/09-raster-structure.html">Intro to Raster Data</a></td>
+      </tr>
+      <tr>
+        <td>Week 4</td>
+	<td>July 22</td>    
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/10-raster-plot.html">Plot Raster Data</a></td>
+      </tr>
+      <tr>
+        <td> </td>
+	<td></td>	
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/11-raster-reproject-in-r.html">Reproject Raster Data (Part 1)</a></td>
+      </tr>
+      <tr>
+        <td>Week 5</td>
+	<td>July 29</td>    
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/11-raster-reproject-in-r.html">Reproject Raster Data (Part 2)</a></td>
+      </tr>
+      <tr>
+        <td> </td>
+	<td></td>	
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/12-vector-open-shapefile-in-r.html">Open and Plot Vector Layers</a></td>
+      </tr>
+      <tr>
+        <td> </td>
+	<td></td>	
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/13-vector-shapefile-attributes-in-r.html">Explore and Plot by Vector Layer Attributes (Part 1)</a></td>
+      </tr>
+      <tr>
+        <td>Week 6</td>
+	<td>Aug 5</td>    
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/13-vector-shapefile-attributes-in-r.html">Explore and Plot by Vector Layer Attributes (Part 2)</a></td>
+      </tr>
+      <tr>
+        <td> </td>
+	<td></td>	
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/14-vector-plot-shapefiles-custom-legend.html">Plot Multiple Vector Layers</a></td>
+      </tr>
+      <tr>
+        <td> </td>
+	<td></td>	
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/15-vector-when-data-dont-line-up-crs.html">Handling Spatial Projection & CRS (Part 1)</a></td>
+      </tr>
+      <tr>
+        <td>Week 7</td>
+	<td>Aug 12</td>    
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/15-vector-when-data-dont-line-up-crs.html">Handling Spatial Projection & CRS (Part 2)</a></td>
+      </tr>
+      <tr>
+        <td> </td>
+	<td></td>	
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/16-vector-csv-to-shapefile-in-r.html">Convert from .csv to a Vector Layer</a></td>
+      </tr>
+      <tr>
+        <td> </td>
+	<td></td>	
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/17-vector-raster-integration.html">Manipulate Raster Data (Part 1)</a></td>
+      </tr>
+      <tr>
+        <td>Week 8</td>
+	<td>Aug 19</td>    
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/17-vector-raster-integration.html">Manipulate Raster Data (Part 2)</a></td>
+      </tr>
+      <tr>
+        <td> </td>
+	<td></td>	
+        <td><a href="https://emlab-ucsb.github.io/2024-07-01-ucsb-intro-geospatial/18-plot-time-series-rasters-in-r.html">Create Publication-quality Graphics</a></td>
+      </tr>
+      <tr>
+	<td>After the workshop</td>
+        <td> </td>	
+	<td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
+      </tr>
+    </table>
+  </div>
+	
+  <div class="col-md-6">
+    <h3>Office Hours and SharkyR Lectures (4-5p PT)</h3>
+    <table class="table table-striped">
+      <tr>
+        <td>June 27</td>    
+        <td>Office Hours</td>
+	<td>Downloading R, RStudio, and data required for the workshop</td>      
+      </tr>
+      <tr>
+        <td>July 11</td>    
+        <td>SharkyR Lecture</td>
+	<td>Presentation by Allie Caughman & Leo Manir Feitosa</td>      
+      </tr>
+      <tr>
+        <td>July 18</td>    
+        <td>Office Hours</td>
+	<td>Bring any-R-thing you need help troubleshooting</td>      
+      </tr>
+      <tr>
+        <td>July 25</td>    
+        <td>SharkyR Lecture</td>
+	<td>Presentation by Dr. Emily Meese</td>      
+      </tr>
+      <tr>
+        <td>Aug 1</td>    
+        <td>Office Hours</td>
+	<td>Bring any-R-thing you need help troubleshooting</td>      
+      </tr>
+      <tr>
+        <td>Aug 8</td>    
+        <td>SharkyR Lecture</td>
+	<td>Presentation by Dr. Danielle Haulsee</td>      
+      </tr>
+      <tr>
+        <td>Aug 15</td>    
+        <td>Office Hours</td>
+	<td>Bring any-R-thing you need help troubleshooting</td>      
+      </tr>
+      <tr>
+        <td>Aug 22</td>    
+        <td>SharkyR Lecture</td>
+	<td>Presentation by A-bel Gong</td>      
+      </tr>
+    </table>
+  </div>
+</div>
+
+{% else %}
+{% include warning-curriculum.html %}
+{% endif %}
