@@ -9,12 +9,12 @@ country: "us"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
 latitude: "34.420830"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-119.698189"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "July 1, 2024 - August 22, 2024"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "August 4, 2026 - September 24, 2026"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "3-5 pm PT"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2024-07-01      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2024-08-22        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Echelle Burns", "Allie Caughman", "Danielle Ferraro", "Jason Flower"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Echelle Burns", "Allie Caughman", "Danielle Ferraro", "Jason Flower", "Lennon Thomas", "Jose Niño Muriel", "Tracey Mangin", "Kristi Liu", "Gavin McDonald"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Echelle Burns", "Danielle Ferraro", "Jason Flower", "Lennon Thomas"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Echelle Burns", "Danielle Ferraro", "Jason Flower", "Lennon Thomas"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["echelle_burns@ucsb.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
