@@ -11,8 +11,8 @@ latitude: "34.420830"        # decimal latitude of workshop venue (use https://w
 longitude: "-119.698189"       # decimal longitude of the workshop venue (use https://www.latlong.net)
 humandate: "August 4, 2026 - September 24, 2026"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "3-5 pm PT"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
-startdate: 2024-07-01      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2024-08-22        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+startdate: 2026-08-04      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2026-09-24        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Echelle Burns", "Danielle Ferraro", "Jason Flower", "Lennon Thomas"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Echelle Burns", "Danielle Ferraro", "Jason Flower", "Lennon Thomas"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["echelle_burns@ucsb.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
@@ -288,7 +288,7 @@ Edit the text to match who can attend the workshop. For instance:
 <h2>Registration</h2>
 <p>Register for the workshop by clicking the link below and providing your e-mail address. We will use your e-mail address to inform you of any changes to the course schedule and provide additional information about the course. </p>
 <p class="text-center">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfM_RqFS1fZ8qzF7AsThiMC5lQvBv6jNRxbdlxPxxWHS4bpQA/viewform?usp=sf_link">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfss0pIt7hpzubBduWJU0_bGxaSflK6CKI5G_v4_Tl9nHkQng/viewform?usp=dialog">
     <button type="button" class="btn btn-info">Register for this workshop</button>
   </a>
 </p>
